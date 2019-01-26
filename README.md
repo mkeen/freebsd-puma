@@ -23,6 +23,14 @@ to
 
 You might need to add other services to this list if your Rails application requires them.
 
+Depending on your ruby package, you may need to change procname. This is used to match the process name to the pid, to determine whether Puma is running. If you installed ruby 2.4 on FreeBSD, you would change
+
+    # procname="ruby"
+    
+to
+
+    # procname="ruby24"
+
 
 ## Quick Setup
 
